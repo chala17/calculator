@@ -1,0 +1,139 @@
+body {
+    background-image: url("Matrix-Numbers.webp");
+}
+
+#calcBody {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    background-color: #f0e8e8;
+    height: 600px;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    grid-template-areas: 
+        "display display display display"
+        "display display display display"
+        "clear clear clear plus"
+        "seven eight nine minus"
+        "four five six multiply"
+        "one two three divide"
+        "decimal zero backspace equals";
+}
+
+#display {
+    grid-area: display;
+    position: relative;
+    background-color: black;
+    color: limegreen;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3px;
+    margin-top: -3px; 
+    font-weight: bold;
+}
+
+#display p {
+    position: absolute;
+    top: 18px;
+    right: 0px;
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+#clear {
+    grid-area: clear;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#equals {
+    grid-area: equals;
+}
+
+.buttons {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border: 1px solid #333;
+    border-radius: 3%;
+}
+
+.buttons:hover {
+    background-color: lavender;
+}
+
+.number {
+    background-color: #ededed;
+}
+
+.operation, .decimal, .backspace {
+    background-color: #aaa;
+}
+
+#decimal {
+    grid-area: decimal;
+}
+
+#backspace {
+    grid-area: backspace;
+}
+
+#backspace .backspace {
+    font-size: 16px;
+}
